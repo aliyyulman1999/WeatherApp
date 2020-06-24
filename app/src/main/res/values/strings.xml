@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Weather App</string>
+
+    <string name="facebook_application_id" translatable="false">260952551681609</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">fb260952551681609</string>
+</resources>
