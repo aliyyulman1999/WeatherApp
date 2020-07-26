@@ -16,15 +16,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".SearchActivity"></activity>
+        <activity android:name=".ProfilActivity"></activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".SearchActivity" />
         <activity android:name=".Main2Activity" />
         <activity android:name=".LoginActivity" />
-        <activity android:name=".SwipeActivity" />
+        <activity android:name=".ContactActivity" />
         <activity
             android:name=".DashboardActivity"
             android:label="Welcome"
             android:parentActivityName=".LoginActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".SwipeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

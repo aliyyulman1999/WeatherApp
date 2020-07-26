@@ -76,12 +76,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Precipitation"
+                android:text="Wind"
                 android:textStyle="bold"
                 android:textSize="16sp"
                 android:textColor="#000"
                 android:layout_gravity="center"/>
             <TextView
+                android:id="@+id/wind"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -106,12 +107,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="UV Index"
+                android:text="Humidity"
                 android:textStyle="bold"
                 android:textSize="16sp"
                 android:textColor="#000"
                 android:layout_gravity="center"/>
             <TextView
+                android:id="@+id/humidity"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -152,6 +154,7 @@
                 android:textColor="#000"
                 android:layout_gravity="center"/>
             <TextView
+                android:id="@+id/temp_max"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -161,6 +164,7 @@
                 android:textColor="#000"
                 android:layout_gravity="center"/>
             <TextView
+                android:id="@+id/temp_min"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="3dp"
@@ -170,6 +174,7 @@
                 android:textColor="#000"
                 android:layout_gravity="center"/>
             <TextView
+                android:id="@+id/pressure"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="3dp"
@@ -199,6 +204,7 @@
                 android:textColor="#000"
                 android:layout_gravity="center"/>
             <TextView
+                android:id="@+id/sunrise"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="29dp"
@@ -208,6 +214,7 @@
                 android:textColor="#000"
                 android:layout_gravity="center"/>
             <TextView
+                android:id="@+id/sunset"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="3dp"
@@ -275,7 +282,18 @@
         </LinearLayout>
 
     </LinearLayout>
+    <ProgressBar
+        android:id="@+id/loader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
 
-
-
+    <TextView
+        android:id="@+id/errorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Something went wrong"
+        android:visibility="gone" />
 </RelativeLayout>
